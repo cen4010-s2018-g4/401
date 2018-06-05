@@ -1,0 +1,346 @@
+@import url('simpletextrotator.css');
+
+/*-----------------------------------------------------------------------------------*/
+/*  skills
+/*-----------------------------------------------------------------------------------*/
+#skills {
+  position: relative;
+  padding-bottom: 150px;
+}
+
+#skills .skills-list {
+  margin-bottom: 50px;
+}
+
+#skills .skills-list .nav {
+  display: inline-block !important;
+  margin: 0;
+}
+
+#skills .skills-list .nav li {
+  margin: 0 40px 0 0;
+  float: left;
+  font-size: 14px;
+  color: #999999;
+  line-height: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', helvetica;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#skills .skills-list .nav li:hover, #skills .skills-list .nav li.filter-active  {
+  color: #b8a07e;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#skills .skills-container {
+  display: inline-block !important;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.skills-thumbnail {
+  position: relative !important;
+  overflow: hidden;
+}
+
+.skills-thumbnail div {
+  position: relative;
+}
+
+.skills-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.skills-box .skills-box-caption {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(240, 95, 64, 0.9);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.skills-box .skills-box-caption .skills-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.skills-box .skills-box-caption .skills-box-caption-content .project-category,
+.skills-box .skills-box-caption .skills-box-caption-content .project-name {
+  padding: 0 15px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.skills-box .skills-box-caption .skills-box-caption-content .project-category {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.skills-box .skills-box-caption .skills-box-caption-content .project-name {
+  font-size: 18px;
+}
+
+.skills-box:hover .skills-box-caption {
+  opacity: 1;
+}
+
+.skills-box:focus {
+  outline: none;
+}
+
+.skills-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+  .skills-box-caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: $white;
+    background: fade-out($primary, .1);
+    @include transition-all;
+    .skills-box-caption-content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      text-align: center;
+      .project-category,
+      .project-name {
+        padding: 0 15px;
+        @include sans-serif-font;
+      }
+      .project-category {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .project-name {
+        font-size: 18px;
+      }
+    }
+  }
+  &:hover {
+    .skills-box-caption {
+      opacity: 1;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+  @media (min-width: 768px) {
+    .skills-box-caption {
+      .skills-box-caption-content {
+        .project-category {
+          font-size: 16px;
+        }
+        .project-name {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+#skills .skills-list .nav li {
+  float: none;
+  margin: 20px;
+  display: inline-block;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  progress bar
+/*-----------------------------------------------------------------------------------*/
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-moz-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-ms-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-o-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.progress {
+  padding: 0px;
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+  background-repeat: repeat-x;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff9f9f9', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.progress .bar + .bar {
+  -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.progress-striped .bar {
+  background-color: #b8a07e;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 40px 40px;
+     -moz-background-size: 40px 40px;
+       -o-background-size: 40px 40px;
+          background-size: 40px 40px;
+}
+
+.progress.active .bar {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+     -moz-animation: progress-bar-stripes 2s linear infinite;
+      -ms-animation: progress-bar-stripes 2s linear infinite;
+       -o-animation: progress-bar-stripes 2s linear infinite;
+          animation: progress-bar-stripes 2s linear infinite;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  progress bar
+/*-----------------------------------------------------------------------------------*/
+.bar.bar95 {
+	width:95%;
+}
+.bar.bar92 {
+	width:92%;
+}
+.bar.bar90 {
+	width:90%;
+}
+.bar.bar87 {
+	width:87%;
+}
+.bar.bar85 {
+	width:85%;
+}
+.bar.bar83 {
+	width:83%;
+}
+.bar.bar80 {
+	width:80%;
+}
+.bar.bar75 {
+	width:75%;
+}
+.bar.bar70 {
+	width:70%;
+}
+.bar.bar65 {
+	width:65%;
+}
+.bar.bar60 {
+	width:60%;
+}
+.bar.bar55 {
+	width:55%;
+}
+.bar.bar50 {
+	width:50%;
+}
+.bar.bar45 {
+	width:45%;
+}
+.bar.bar40 {
+	width:40%;
+}
+.bar.bar40 {
+	width:40%;
+}
+.bar.bar35 {
+	width:35%;
+}
+.bar.bar30 {
+	width:30%;
+}
+.bar.bar25 {
+	width:25%;
+}
+.bar.bar20 {
+	width:20%;
+}
+.bar.bar15 {
+	width:15%;
+}
+.bar.bar10 {
+	width:10%;
+}

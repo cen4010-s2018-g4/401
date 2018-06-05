@@ -1,0 +1,123 @@
+#typed{
+    font-size: 64px;
+    font-weight: bolder;
+    color: white;
+}
+
+#intro{
+    background-image: url(images/bg.jpg);
+}
+
+
+#parallax1{
+	background-image: url(images/bg1.jpg);
+}
+
+#parallax2{
+	background-image: url(images/bg2.jpg);
+}
+
+.fit
+{
+    width: 100%;
+    height: auto;
+}
+
+.smallerfit{
+    width:80%;
+    height: auto;
+}
+
+    /*color: #00c1c1;*/
+.navlogo
+{
+    width: 50px;
+    height:auto;
+}
+
+
+.navbar-brand{
+    padding: 0px 15px;
+}
+
+.icons{
+    font-size: 32px;
+}
+
+.zoom{
+    font-size:64px;
+}
+
+.zoompic
+{
+    width: 64px;
+    height: auto;
+}
+
+.fab
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.lnames
+{
+    font-size: 21px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+
+.left
+{
+    text-align: left;
+}
+
+.center{
+    text-align: center  !important;
+}
+
+.centerpic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.verticalm{
+    margin-top: 15px;
+    padding-left: none;
+}
+
+.verticali{
+    margin-top: 8px;
+}
+
+.row-no-padding > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.row{
+    margin: 0px;
+}
+
+.level-label {
+    color: #bec0cd;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.margin25{
+    margin-top:25px;
+}
+
+.marginb35{
+    margin-bottom:35px;
+}
+.squared{
+    width: 150px;
+    height: 150px;
+}
+
